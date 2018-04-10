@@ -9,18 +9,30 @@ namespace Lab4
     class CarRental
     {
         List<Sucursal> Sucursales;
-        List<Arriendo> Arriendos;
+
 
         public CarRental()
         {
             Sucursales = new List<Sucursal>();
-            Arriendos = new List<Arriendo>();
+
         }
 
-        public void Arrendar()
+        public void AgregarSucursal(Sucursal s)
         {
-
+            Sucursales.Add(s);
         }
+        public void MostrarSucursales()
+        {
+            Console.WriteLine("Las sucursales se encuentran en:");
+            int i = 1;
+            foreach (Sucursal s in Sucursales)
+            {
+                Console.WriteLine(i+".- "+s.GetRegion());
+                i++;
+            }
+        }
+
+        
 
 
     }
