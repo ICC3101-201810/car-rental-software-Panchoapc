@@ -18,13 +18,17 @@ namespace Lab4
             Vehiculos = new List<Vehiculo>();
             Arriendos = new List<Arriendo>();
         }
-        public void Arrendar()
-        {
-
-        }
         public string GetRegion()
         {
             return Region;
+        }
+        public void AgregarVehiculo(Vehiculo vehiculo)
+        {
+            Vehiculos.Add(vehiculo);
+        }
+        public void Arrendar(Vehiculo vehiculo)
+        {
+            // Vehiculos.Find(Predicate<Vehiculos> vehiculo);
         }
         
     }
