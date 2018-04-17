@@ -18,5 +18,9 @@ namespace Lab4
             VehiculoArrendado = miVehiculoArr;
             Accesorio = MisAccesorios;
         }
+        public Cliente GetArrendatario()
+        {
+            return arrendatario;
+        }
     }
 }

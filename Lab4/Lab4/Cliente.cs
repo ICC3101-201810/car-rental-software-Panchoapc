@@ -21,5 +21,9 @@ namespace Lab4
             RUT = miRUT;
             TipoLicencia = miTipoLicencia;
         }
+        public string GetRUT()
+        {
+            return RUT;
+        }
     }
 }

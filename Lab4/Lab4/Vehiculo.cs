@@ -21,7 +21,7 @@ namespace Lab4
         }
         public void DetallesVehiculo()
         {
-            Console.WriteLine("Vehiculo tipo {0}\nPatente: {1}\nCosto: {2}", Tipo,Patente,Costo);
+            Console.WriteLine("Vehiculo tipo {0}\nPatente: {1}\nCosto: {2}\n", Tipo,Patente,Costo);
         }
         public TipoVehiculo GetTipoVehiculo()
         {

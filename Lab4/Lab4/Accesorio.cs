@@ -19,8 +19,10 @@ namespace Lab4
         {
             int i = 1;
             foreach (string acc in Enum.GetNames(typeof(Accesorios)))
-            Console.WriteLine(i+".-"+acc);
-            i++;
+            {
+                Console.WriteLine(i + ".-" + acc);
+                i++;
+            }
         }
         public void AgregarAccesorio(Accesorios a)
         {
