@@ -43,17 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accesorio.cs" />
-    <Compile Include="Acuatico.cs" />
     <Compile Include="Arriendo.cs" />
-    <Compile Include="Auto.cs" />
-    <Compile Include="Bus.cs" />
-    <Compile Include="Camion.cs" />
     <Compile Include="CarRental.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="Industria.cs" />
-    <Compile Include="MaquinariaPesada.cs" />
-    <Compile Include="Moto.cs" />
-    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sucursal.cs" />

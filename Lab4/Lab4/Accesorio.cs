@@ -9,11 +9,24 @@ namespace Lab4
     enum Accesorios { RadioBTh, GPS, RuedaRepuesto, CortinaVentana, Sillita}
     class Accesorio
     {
-        Accesorios Accesorios;
+        List<Accesorios> accesorios;
 
-        public Accesorio(Accesorios misAccesorios)
+        public Accesorio()
         {
-            Accesorios = misAccesorios;
+            accesorios = new List<Accesorios>();
         }
+        public void MostrarTiposAccesorios()
+        {
+            int i = 1;
+            foreach (string acc in Enum.GetNames(typeof(Accesorios)))
+            Console.WriteLine(i+".-"+acc);
+            i++;
+        }
+        public void AgregarAccesorio(Accesorios a)
+        {
+            accesorios.Add(a);
+        }
+        
+
     }
 }

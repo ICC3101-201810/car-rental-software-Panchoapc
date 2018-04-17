@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab4
 {
-    abstract class Cliente
+    enum TipoCliente { Persona, Empresa, Organizacion, Institucion }
+    class Cliente
     {
+        TipoCliente Tipo;
         string Nombre;
+        string RUT;
+        string TipoLicencia;
 
-        public Cliente(string miNombre)
+        public Cliente(TipoCliente miTipo, string miNombre, string miRUT, string miTipoLicencia)
         {
+            Tipo = miTipo;
             Nombre = miNombre;
+            RUT = miRUT;
+            TipoLicencia = miTipoLicencia;
         }
     }
 }

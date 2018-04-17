@@ -9,12 +9,9 @@ namespace Lab4
     class CarRental
     {
         List<Sucursal> Sucursales;
-
-
         public CarRental()
         {
             Sucursales = new List<Sucursal>();
-
         }
 
         public void AgregarSucursal(Sucursal s)
@@ -31,8 +28,12 @@ namespace Lab4
                 i++;
             }
         }
+        public List<Sucursal> GetListaSucursales()
+        {
+            return Sucursales;
+        }
 
-        
+
 
 
     }
